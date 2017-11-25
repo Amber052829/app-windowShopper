@@ -16,6 +16,7 @@
 		22B39EF01FC9E9AE00FC7431 /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B39EEF1FC9E9AE00FC7431 /* window_shopperTests.swift */; };
 		22B39EF91FC9E9D100FC7431 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B39EF81FC9E9D100FC7431 /* Wage.swift */; };
 		22B39EFA1FC9EB2000FC7431 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B39EF81FC9E9D100FC7431 /* Wage.swift */; };
+		22B39EFB1FCA13D400FC7431 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AD7B781FC969BD00679D44 /* CurrencyTxtField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B39EFB1FCA13D400FC7431 /* CurrencyTxtField.swift in Sources */,
 				22B39EF01FC9E9AE00FC7431 /* window_shopperTests.swift in Sources */,
 				22B39EFA1FC9EB2000FC7431 /* Wage.swift in Sources */,
 			);
