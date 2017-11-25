@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,10 +46,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50V-U6-pCJ">
+                                <rect key="frame" x="36" y="300" width="303" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIs-Ly-5gt">
+                                <rect key="frame" x="142.5" y="367.5" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e4a-ZP-KHe"/>
+                                    <constraint firstAttribute="width" constant="90" id="lFb-53-0Y1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dut-sA-FOi">
+                                <rect key="frame" x="36" y="601" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tLJ-vu-YXE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QJJ-9J-Qif"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="50V-U6-pCJ" firstAttribute="top" secondItem="p81-K5-wxc" secondAttribute="bottom" constant="45" id="1Rt-SK-yhw"/>
+                            <constraint firstItem="xIs-Ly-5gt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AdW-kF-aNv"/>
                             <constraint firstItem="4Yw-9b-95S" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="C9B-wK-5ON"/>
+                            <constraint firstItem="Dut-sA-FOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="ER7-sP-5kL"/>
                             <constraint firstItem="p81-K5-wxc" firstAttribute="top" secondItem="jmm-Ns-0hR" secondAttribute="bottom" constant="25" id="Hq6-03-1L9"/>
                             <constraint firstItem="jmm-Ns-0hR" firstAttribute="top" secondItem="5WI-by-YbX" secondAttribute="bottom" constant="35" id="J6b-CC-WVv"/>
                             <constraint firstItem="p81-K5-wxc" firstAttribute="leading" secondItem="jmm-Ns-0hR" secondAttribute="leading" id="R2T-z1-mXn"/>
@@ -57,16 +89,23 @@
                             <constraint firstItem="4Yw-9b-95S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Unh-67-Suv"/>
                             <constraint firstItem="p81-K5-wxc" firstAttribute="height" secondItem="jmm-Ns-0hR" secondAttribute="height" id="VUg-GO-Ahf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jmm-Ns-0hR" secondAttribute="trailing" constant="36" id="WDe-Qo-odC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Dut-sA-FOi" secondAttribute="bottom" constant="36" id="YgT-rF-BCJ"/>
+                            <constraint firstItem="xIs-Ly-5gt" firstAttribute="top" secondItem="50V-U6-pCJ" secondAttribute="bottom" constant="5" id="Z7h-8l-RWx"/>
                             <constraint firstItem="5WI-by-YbX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBb-bL-K8k"/>
                             <constraint firstItem="jmm-Ns-0hR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="lsT-Ww-Lhj"/>
                             <constraint firstItem="p81-K5-wxc" firstAttribute="trailing" secondItem="jmm-Ns-0hR" secondAttribute="trailing" id="pvk-vK-zVh"/>
                             <constraint firstItem="5WI-by-YbX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="qrE-Ij-Ark"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dut-sA-FOi" secondAttribute="trailing" constant="36" id="vFd-TC-ZEU"/>
+                            <constraint firstItem="50V-U6-pCJ" firstAttribute="width" secondItem="p81-K5-wxc" secondAttribute="width" id="z6s-Sg-Zuv"/>
                             <constraint firstItem="4Yw-9b-95S" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zYs-DG-aHM"/>
+                            <constraint firstItem="50V-U6-pCJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zeZ-KZ-Qna"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLbl" destination="xIs-Ly-5gt" id="Cyb-zm-AWx"/>
                         <outlet property="priceTxt" destination="p81-K5-wxc" id="RoC-Wa-iSU"/>
+                        <outlet property="resultLbl" destination="50V-U6-pCJ" id="cA7-f2-Apv"/>
                         <outlet property="wageTxt" destination="jmm-Ns-0hR" id="9Se-Um-POg"/>
                     </connections>
                 </viewController>
